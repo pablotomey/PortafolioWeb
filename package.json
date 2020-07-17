@@ -1,0 +1,23 @@
+{
+  "name": "PortafolioWeb",
+  "version": "1.0.0",
+  "description": "Portafolio web Pablo Tomey",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pabloTP87/PortafolioWeb.git"
+  },
+  "keywords": [],
+  "author": "Pablo Tomey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pabloTP87/PortafolioWeb/issues"
+  },
+  "homepage": "https://github.com/pabloTP87/PortafolioWeb#readme",
+  "dependencies": {
+    "gulp": "^4.0.2"
+  }
+}
