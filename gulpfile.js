@@ -1,6 +1,6 @@
 var gulp = require('gulp'),
     sass = require('gulp-sass');
-    uglify = require('gulp-uglify');
+    compress = require('gulp-minify');
     rename = require('gulp-rename');
     img = require('gulp-imagemin');
     minify = require('gulp-csso');
@@ -23,7 +23,9 @@ function reload(cb){
 
 function style(cb){
     gulp.src('source/sass/**/*.sass')
-    .pipe(sass())
+    .pipe(sass({
+        outputStyle: 'compressed'
+    }))
     .pipe(rename({
         suffix: '.min'
     }))
@@ -34,7 +36,9 @@ function style(cb){
 
 function scripts(cb){
     gulp.src('source/js/*.js')
-    .pipe(uglify())
+    .pipe(compress({
+        min: '.js'
+    }))
     .pipe(gulp.dest('build/js/'));
     cb();
 }

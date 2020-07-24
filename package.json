@@ -2,7 +2,7 @@
   "name": "portafolioweb",
   "version": "1.0.0",
   "description": "Portafolio web Pablo Tomey",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -22,9 +22,9 @@
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-imagemin": "^7.1.0",
+    "gulp-minify": "^3.1.0",
     "gulp-rename": "^2.0.0",
-    "gulp-sass": "^4.1.0",
-    "gulp-uglify": "^3.0.2"
+    "gulp-sass": "^4.1.0"
   },
   "devDependencies": {
     "gulp-csso": "^4.0.1"

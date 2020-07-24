@@ -1,0 +1,1 @@
+const secciones=new fullpage("#fullpage",{autoScrolling:!0,scrollHorizontally:!0});fullpage_api.setAllowScrolling(!1);
