@@ -12,12 +12,9 @@
     <title>Pablo Tomey</title>
   </head>
   <body>
+    <!--nav section, out of fullpage-->
     <section id="header">
       <div class="wrapper">
-        <div class="logo">
-          <img src="img/logo-portafolio.svg" alt="logo-portafolio"/>
-        </div>
-
         <nav>
           <ul class="main-nav">
             <li><a href="#">Sobre mi</a></li>
@@ -28,10 +25,91 @@
         </nav>
       </div>
     </section>
+
     <div id="fullpage">
-      <section class="section" id="home"></section>
-      <section class="section" id="about"></section>
-      <section class="section">Sección 4</section>
+      <!--home or first screen section-->
+      <section class="section" id="home">
+        <div class="wrapper">
+          <div class="logo">
+            <img src="img/logo-portafolio.svg" alt="logo-portafolio" />
+            <h1>Pablo Tomey</h1>
+            <p>Desarrollador mobile</p>
+          </div>
+        </div>
+      </section>
+      <!--about me section-->
+      <section class="section" id="about">
+        <div class="wrapper">
+          <div class="about-block">
+            <div class="profile">
+              <img src="img/profile-img.png" alt="profile-img" />
+
+              <div class="profile-item">
+                <span class="icon"
+                  ><img src="img/profile-icon-1.svg" alt="profile-icon"
+                /></span>
+                <span class="text">Punta Arenas, Chile</span>
+              </div>
+
+              <div class="profile-item">
+                <span class="icon"
+                  ><img src="img/profile-icon-2.svg" alt="profile-icon"
+                /></span>
+                <span class="text">Pablo.tp87@gmail.com</span>
+              </div>
+            </div>
+            <div class="profile-description">
+              <article>
+                <h1>Sobre mi</h1>
+                <p>
+                  Mi nombre es Pablo Tomey, soy Ingeniero en informática, tengo
+                  2 años de experiencia en desarrollo de aplicaciones móviles
+                  para Android especialmente en mi proyecto paralelo Apprender,
+                  como también inmerso cada vez más en el mundo del desarrollo
+                  web.<span><br /><br /></span> Me gusta mucho el diseño de
+                  interfaces y también la experiencia de usuario, así que pongo
+                  énfasis en prototipar antes de desarrollar. La innovación y
+                  crear soluciones desde el poder de la imaginación es mi
+                  principal motivación dentro del mundo tecnológico. Siempre
+                  buscando el conocimiento, aprendiendo nuevas tecnologías y
+                  herramientas que permitan mejorar mi trabajo.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--formación section-->
+      <section class="section" id="formacion">
+        <div class="wrapper">
+          <div class="formacion-block">
+            <h1>Formación</h1>
+            <div class="formacion-item">
+              <h2>Ingeniería en informática</h2>
+              <p>
+                Titulado de la carrera de Ingeniería en Informática de la
+                Universidad Tecnológica de Chile Inacap.
+              </p>
+            </div>
+            <div class="formacion-item">
+              <h2>Analista Programador</h2>
+              <p>
+                Titulado de la carrera Analista Programador en el Centro de
+                Formación Técnica Inacap.
+              </p>
+            </div>
+            <div class="formacion-item">
+              <h2>Técnico en sonido</h2>
+              <p>
+                Titulado de la carrera Técnico en Sonido en el Instituto
+                Profesional Santo Tomas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--projects section-->
+      <section class="section" id="projects"></section>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.js"></script>

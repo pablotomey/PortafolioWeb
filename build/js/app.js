@@ -3,3 +3,6 @@ const secciones = new fullpage('#fullpage', {
 	autoScrolling:true,
 	scrollHorizontally: true
 });
+
+//métodos
+fullpage_api.setAllowScrolling(false);
