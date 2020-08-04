@@ -5,4 +5,4 @@ const secciones = new fullpage('#fullpage', {
 });
 
 //métodos
-fullpage_api.setAllowScrolling(false);
+fullpage_api.setAllowScrolling(true);
