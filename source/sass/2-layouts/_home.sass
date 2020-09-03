@@ -2,17 +2,29 @@
     background: url("/img/header-img.png") no-repeat
     background-size: cover
     color: $white-text
-    text-align: center
+    text-align: center 
 
+    // tablet size
+    @media screen and ( max-width: 768px )
+        background: url("/img/header-img-md.png") no-repeat
+
+    @media screen and ( max-width: 420px )
+        background: url("/img/header-img-sm.png") no-repeat
+        background-size: cover
 .logo
     img
         width: 100px
         height: 100px
 
     h1
-        font-size: 45px
-        margin-bottom: 8px
+        font-size: 35px
+        margin: 0 auto
+        @media screen and ( min-width: 1367px )
+            font-size: 45px
+            
     
     p
-        font-size: 30px
+        font-size: 25px
         margin: 0 auto
+        @media screen and ( min-width: 1367px )
+            font-size: 35px

@@ -5,15 +5,50 @@
     align-items: center
     color: $white-text
 
+    @media screen and ( max-width: 768px )
+        background: url("/img/formacion-img-md.png") no-repeat
+    @media screen and ( max-width: 420px )
+        background: url("/img/formacion-img-sm.png") no-repeat
+        background-size: cover
+
 .formacion-block
-    width: 55%
+    display: flex
+    width: 100%
     margin: 0 auto
 
-    h1
+    @media screen and ( max-width: 1140px )
+        display: block
+        width: 60%
+    @media screen and ( max-width: 600px )
+        width: 80%
+    @media screen and ( max-width: 420px )
+        width: 100%
+        
+        
+
+h1
+    font-size: 35px
+
+    @media screen and ( min-width: 1367px )
         font-size: 45px
+    @media screen and ( max-width: 420px )
+        font-size: 28px
+            
+
+
+.formacion-item
+    margin: 40px
+
     h2
-        font-size: 30px
+        font-size: 25px
         color: $subtitle-color-two
         margin: 0 auto
+
+        @media screen and ( max-width: 420px )
+            font-size: 20px
     p
-        font-size: 25px
+        font-size: 22px
+        margin-top: 5px
+
+        @media screen and ( max-width: 420px )
+            font-size: 18px

@@ -5,7 +5,10 @@
 
 .projects-block
     h1
-        font-size: 45px
+        font-size: 35px
+
+        @media screen and ( min-width: 1367px )
+            font-size: 45px
 
     p
         font-size: 22px
@@ -14,9 +17,26 @@
     width: 80%
     margin: 0 auto
 
-    img
-        margin: 30px 0 20px 0
+    .device-md
+        width: 500px
+        height: 320px
+        margin: 20px 0 20px 0
 
+        @media screen and ( max-width: 600px )
+            width: 300px
+            height: 190px 
+        @media screen and ( max-width: 420px )
+            display: none
+            
+    .device-sm
+        display: none 
+        @media screen and ( max-width: 420px )
+            margin: 20px 0 20px 0 auto
+            display: inline-block  
+        
+        @media screen and ( max-width: 368px )
+            width: 202px
+            height: 230px
 
 .project-group-block
     display: flex
@@ -27,6 +47,19 @@
     align-items: center
     width: 40%
 
+    
+//mobile img
+.mobile-img
+    @media screen and ( max-width: 1024px )
+        width: 150px
+        height: 270px
+
+//web img
+.web-img
+    @media screen and ( max-width: 1024px )
+        width: 268px
+        height: 183px
+
 .project-desc
     width: 55%
 
@@ -34,6 +67,9 @@
     text-align: left
     p
         font-size: 25px
+
+        @media screen and ( max-width: 1024px )
+            font-size: 22px
 
 .logo-block
     display: flex
