@@ -1,30 +1,51 @@
 #home
-    background: url("/img/header-img.png") no-repeat
-    background-size: cover
-    color: $white-text
-    text-align: center 
+    background: $primary-color
+    color: white
 
-    // tablet size
-    @media screen and ( max-width: 768px )
-        background: url("/img/header-img-md.png") no-repeat
+.header-block
+    display: flex
+    margin: 80px auto
+
+    @media screen and ( max-width: 1140px )
+        width: 90%
+    
+    @media screen and ( max-width: 960px )
+        display: block
+        width: 80%
+        text-align: center
+        margin: 60px auto
+
+    @media screen and ( max-width: 600px )
+        width: 90%
+
+.img-header img
+    @media screen and ( max-width: 960px )
+        width: 524px
+        height: 596px
+
+    @media screen and ( max-width: 600px )
+        width: 404px
+        height: 446px
 
     @media screen and ( max-width: 420px )
-        background: url("/img/header-img-sm.png") no-repeat
-        background-size: cover
-.logo
-    img
-        width: 100px
-        height: 100px
+        width: 304px
+        height: 346px
 
-    h1
-        font-size: 35px
+.title
+    display: flex
+    align-items: center
+    margin-left: 80px
+
+    @media screen and ( max-width: 1140px )
+        margin-left: 20px
+    @media screen and ( max-width: 960px )
+        display: block
         margin: 0 auto
-        @media screen and ( min-width: 1367px )
-            font-size: 45px
-            
-    
-    p
-        font-size: 25px
+
+    h1 
         margin: 0 auto
-        @media screen and ( min-width: 1367px )
-            font-size: 35px
+    h3 
+        margin: 0 auto
+        color: #586165
+
+

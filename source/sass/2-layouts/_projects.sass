@@ -4,6 +4,8 @@
     color: $white-text
 
 .projects-block
+    display: block
+    margin-bottom: 100px
     h1
         font-size: 35px
 
@@ -40,12 +42,18 @@
 
 .project-group-block
     display: flex
+    @media screen and ( max-width: 860px )
+        display: inline-block
+        margin: 10px auto
+        
 
 .img-project
     display: flex
     justify-content: center
     align-items: center
     width: 40%
+    @media screen and ( max-width: 860px )
+        margin: 0 auto
 
     
 //mobile img
@@ -62,9 +70,17 @@
 
 .project-desc
     width: 55%
+    @media screen and ( max-width: 860px )
+        margin: 0 auto
+    @media screen and ( max-width: 768px )
+        width: 70%
 
 .description
     text-align: left
+
+    h1
+        @media screen and ( max-width: 860px )
+            text-align: center
     p
         font-size: 25px
 
@@ -73,6 +89,8 @@
 
 .logo-block
     display: flex
+    @media screen and ( max-width: 860px )
+        justify-content: center
 
 .tech-logo 
     margin-right: 20px
