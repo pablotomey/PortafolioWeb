@@ -5,15 +5,19 @@
 
 .projects-block
     display: block
-    margin-bottom: 100px
+    margin: 100px 0 100px 0
     h1
         font-size: 35px
-
         @media screen and ( min-width: 1367px )
             font-size: 45px
+        @media screen and ( max-width: 420px )
+            font-size: 28px
 
     p
         font-size: 22px
+
+        @media screen and ( max-width: 420px )
+            font-size: 18px
 
 .device
     width: 80%
@@ -39,6 +43,18 @@
         @media screen and ( max-width: 368px )
             width: 202px
             height: 230px
+
+    button
+        background: linear-gradient(90deg, rgba(57,181,74,1) 0%, rgba(0,255,0,1) 100%)
+        width: 250px
+        height: 50px
+        border: none
+        font-size: 22px
+        border-radius: 40px
+        transition-duration: 0.4s
+    
+    button:hover
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)
 
 .project-group-block
     display: flex
